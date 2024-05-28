@@ -1,0 +1,109 @@
+
+:root{
+    --success-color:rgb(43, 228, 74) ;
+    --error-color:rgb(220, 20, 30)
+}
+
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   background-color: rgb(177, 173, 235);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+
+.container {
+   background-color: rgb(240, 243, 255);
+   border-radius: 5px 10px;
+   box-shadow: 2px 2px 5px rgba(78, 73, 73, 0.3);
+   width: 400px;
+   padding: 10px;
+   border: 2px solid rgb(143, 143, 238);
+}
+
+h2 {
+   text-align: center;
+   font-size: 30px;
+   padding: 15px;
+   margin-bottom: 15px;
+}
+label {
+   font-size: 20px;
+   font-weight: 500;
+   padding: 10px;
+   margin-bottom: 10px;
+   display: block;
+}
+
+.form {
+   padding: 10px 20px;
+}
+.form-control {
+   position: relative;
+}
+
+.form-control input {
+   border: 1px solid rgb(180, 204, 240);
+   border-radius: 4px;
+   display: block;
+   width: 100%;
+   padding: 10px;
+   font-size: 15px;
+}
+.form-control input:focus {
+   border: 1px;
+   border-color: rgb(62, 93, 129);
+}
+
+.form-control.success input{
+    border-color: var(--success-color);
+}
+.form-control.error input{
+    border-color: var(--error-color);
+
+}
+
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    visibility: hidden;
+    bottom: 0;
+    visibility: hidden;
+    left: 0;
+}
+.form-control.error small{
+    visibility: visible;
+}
+
+
+
+
+button {
+   background-color: rgb(122, 122, 255);
+   border: none;
+   border-radius: 5px;
+   color: white;
+   padding: 10px 20px;
+   margin-top: 10px;
+   cursor: pointer;
+   align-items: center;
+   cursor: pointer;
+   display: block;
+   width: 100%;
+}
+button:hover {
+   transition: 0.3s;
+   background-color: rgb(83, 83, 238);
+}
+
+small{
+   margin-top: 50px;
+   padding: top 10px;
+}
